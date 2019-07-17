@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Emisora LA 12 Stereo</title>
+    <link href="./css/bootstrap-material-design.min.css" rel="stylesheet" />
+    <link href="./css/css.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous" />
+    <link href="./css/estilos.css" type="text/css" rel="stylesheet" /> <!--fontawesome para llamar el estilo de los botones-->
+    <!--link para llamar el css-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="py-1 text-center">
+            <img class="d-block mx-auto mb-4" src="img/231.gif" alt="" width="70%" height="250">
+            <h2>LA 12 STEREO ©</h2>
+            <p class="lead">
+                La Verdadera Emisora de los beats
+            </p>
+        </div>
+
+        <div class="row text-center">
+            <!--crear una fila-->
+            <div class="col">
+                <!--col-columna-->
+                <button type="button" class="btn btn-primary" id="play">
+                    <!--sacado de buttoms de bootstrap-->
+                    <i class="fa fa-play-circle"></i>
+                </button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary" id="pause">
+                    <i class="fas fa-pause-circle"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row text-center">
+            <!--crear una fila-->
+            <div class="col">
+                <!--col-columna-->
+                <button type="button" class="btn btn-primary" id="volumeup">
+                    <!--sacado de buttoms de bootstrap-->
+                    <i class="fa fa-volume-up"></i>
+                </button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary" id="volumedown">
+                    <i class="fa fa-volume-down"></i>
+                </button>
+            </div>
+        </div>
+        <div class="py-1 text-center">
+            <!--py lo pone vertical, px-->
+            <img class="d-block mx-auto mb-4" src="" alt="" width="35%" height="auto" />
+            <!--d-block para mostrar la imagen-->
+        </div>
+        <div class="footer">
+            <p>LA 12 STEREO &copy; 2019</p>
+        </div>
+    </div>
+    <!---Reproductor de-- audio--------->
+    <audio id="emisora">
+        <!-- aqui URL de la radio que deseemos-->
+        <source src="http://65.60.45.74:8070/;" type="audio/mpeg" />
+        Tu navegador no es compatible con tu navegador
+    </audio>
+    </div>
+
+    <!--Llamado de javasscript-->
+    <script type="text/javascript" src="./js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="./js/popper.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-material-design.js"></script>
+    <script type="text/javascript" src="./js/fastclick.js"></script>
+    <script type="text/javascript" src="./js/gestures.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+
+</body>
+
+</html>
+
+
+<link href="./css/bootstrap-material-design.min.css" rel="stylesheet" />
+<link href="./css/css.css" rel="stylesheet" />
